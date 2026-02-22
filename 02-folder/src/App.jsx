@@ -4,12 +4,16 @@ import Card from './components/card'
 const App = () => {
   return (
     <div>
-      <div className="card">
-        <h2>MD Jihad Molla</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus, autem?</p>
-         
-      {Card()}
-      </div>
+      <Card/>
+      <Card/>
+      <Card/>
+      <Card/>
+      <Card/>
+      <Card/>
+      <Card/>
+      <Card/>
+      <Card/>
+      <Card/>
     </div>
   )
 }
