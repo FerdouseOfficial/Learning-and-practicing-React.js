@@ -8,7 +8,7 @@ document.body.appendChild(h1);
 
 import chacha from "./app.js";
 
-console.log(chacha)
+console.log(chacha);
 
 //   // LIBRARY
 //   GSAP -
@@ -17,3 +17,7 @@ console.log(chacha)
 //   // Framework
 //   NextJS -
 //   Angular;
+
+import { messi } from "./app.js";
+
+console.log(messi);
