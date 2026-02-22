@@ -10,4 +10,9 @@ document.body.appendChild(h1)
 
 
 // LIBRARY 
+    - GSAP
+    - Lenis
+    - ReactJS
 // Framework
+    - NextJS
+    - Angular
