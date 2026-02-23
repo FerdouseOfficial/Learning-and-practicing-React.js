@@ -1,10 +1,12 @@
 import React from 'react'
 import Cards from './components/cards'
+import User from './components/User'
 
 const App = () => {
   return (
     <div className='parent'>
-      <Cards />
+      {/* <Cards /> */}
+      <User />
     </div>
   )
 }

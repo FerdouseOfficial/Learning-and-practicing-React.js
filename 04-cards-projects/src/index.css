@@ -14,26 +14,29 @@
     "Open Sans",
     "Helvetica Neue",
     sans-serif;
+    color: white;
 }
 
 html,
 body {
   height: 100%;
   width: 100%;
-  /* background: #000; */
+  background: #000;
 }
 
 .parent {
   height: 100vh;
   width: 100%;
-  background-color: #111;
+  /* background-color: #111; */
   padding: 30px;
   position: relative;
+  display: flex;
+  gap: 1rem;
 }
 
 .cards {
-  height: 320px;
-  width: 320px;
+  height: 350px;
+  width: 300px;
   background: #fff;
   border-radius: 20px;
   margin-left: 10px;
@@ -84,10 +87,12 @@ body {
   object-fit: cover;
   transform: translate(-14%, -13%);
 }
-.cards .top button,
-.cards .bottom .apply button {
+.cards .top button{
   padding: 4px 10px;
+  border: 1px solid gray;
   border-radius: 20px;
+  background: transparent;
+  color: gray;
 }
 .cards .center {
   display: flex;
@@ -144,10 +149,18 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 20px;
+  padding: 10px 20px;
+  border-top: 1.5px solid #d7d7d7;
 }
 .cards .bottom .salaryByHour_location .loc {
-  font-size: 10px;
+  font-size: 12px;
   font-weight: bold;
   color: gray;
+}
+.cards .bottom .apply button{
+  padding: 4px 10px;
+  border-radius: 20px;
+  background-color: #000;
+  color: #fff;
+  font-weight: 500;
 }
