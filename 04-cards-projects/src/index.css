@@ -14,7 +14,7 @@
     "Open Sans",
     "Helvetica Neue",
     sans-serif;
-    color: white;
+  /* color: white; */
 }
 
 html,
@@ -25,13 +25,14 @@ body {
 }
 
 .parent {
-  height: 100vh;
+  /* height: 100vh; */
+  min-height: 100vh;
   width: 100%;
-  /* background-color: #111; */
   padding: 30px;
   position: relative;
   display: flex;
-  gap: 1rem;
+  gap: 4px;
+  flex-wrap: wrap;
 }
 
 .cards {
@@ -42,11 +43,8 @@ body {
   margin-left: 10px;
   padding: 20px;
   position: relative;
-  /* margin-top: 10px; */
-  /* display: flex;
-  justify-content: center;
-  align-items: center; */
 }
+
 .cards .top {
   display: flex;
   justify-content: space-between;
@@ -55,45 +53,37 @@ body {
   left: 0;
   right: 0;
 }
-/* .cards .top .logo {
-  height: 34px;
-  width: 34px;
-  border: 1px solid #c79e9e;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
-}
-.cards .top .logo img {
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-  border-radius: 50%;
-  display: block;
-  background: red;
-} */
+
 .cards .top .logo {
   width: 34px;
   height: 34px;
   border: 1px solid #c79e9e;
   border-radius: 50%;
   overflow: hidden;
+  cursor: pointer;
 }
 
 .cards .top .logo img {
-  width: 140%;        /* zoom in */
-  height: 140%;
+  width: 29px;
+  height: 29px;
   object-fit: cover;
-  transform: translate(-14%, -13%);
+  /* transform: translate(-14%, -13%); */
+  cursor: pointer;
 }
-.cards .top button{
+
+.cards .top button {
   padding: 4px 10px;
   border: 1px solid gray;
   border-radius: 20px;
   background: transparent;
   color: gray;
+  cursor: pointer;
 }
+.cards .top button:hover {
+  background-color: #d7d7d7;
+  box-shadow: 1px 1px 2px inset;
+}
+
 .cards .center {
   display: flex;
   flex-direction: column;
@@ -105,14 +95,17 @@ body {
   top: 80px;
   padding: 0 20px;
 }
+
 .cards .center .company {
   display: flex;
   align-items: center;
   justify-content: center;
 }
+
 .cards .center .company h3 {
   font-size: 20px;
 }
+
 .cards .center .company p {
   font-size: 10px;
   padding: 10px;
@@ -136,11 +129,13 @@ body {
   padding: 5px 10px;
   border-radius: 20px;
   font-weight: bold;
+  cursor: pointer;
 }
 
 .cards .center .recruit-position-job_type .jb_type .senior {
   margin-left: 4px;
 }
+
 .cards .bottom {
   position: absolute;
   bottom: 8px;
@@ -152,15 +147,22 @@ body {
   padding: 10px 20px;
   border-top: 1.5px solid #d7d7d7;
 }
+
 .cards .bottom .salaryByHour_location .loc {
   font-size: 12px;
   font-weight: bold;
   color: gray;
 }
-.cards .bottom .apply button{
+
+.cards .bottom .apply button {
   padding: 4px 10px;
   border-radius: 20px;
   background-color: #000;
   color: #fff;
   font-weight: 500;
+  cursor: pointer;
+}
+.cards .bottom .apply button:hover {
+  background-color: #524848;
+  box-shadow: 2px 2px 1px inset;
 }
