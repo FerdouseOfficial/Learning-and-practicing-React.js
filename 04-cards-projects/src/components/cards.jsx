@@ -1,25 +1,27 @@
 import React from "react";
-import amazonLogo from "../assets/images/amazon.png";
+import amazonLogo from "../assets/images/amazon2.png";
 
 const Cards = () => {
   return (
     <div className="cards">
       <div className="top">
-        <img src={amazonLogo} alt="Amazon Logo" />
+        <div className="logo">
+            <img src={amazonLogo} alt="Amazon Logo" />
+        </div>
         <button>
           Save<i className="fa-regular fa-bookmark"></i>
         </button>
       </div>
       <div className="center">
         <div className="company">
-          <h4>Amazon</h4>
+          <h3>Amazon</h3>
           <p className="posted-time">5 days ago</p>
         </div>
         <div className="recruit-position-job_type">
           <h3 className="rc_post">Senior UI/UX Designer</h3>
           <div className="jb_type">
             <button>Part-Time</button>
-            <button>Senior Level</button>
+            <button className="senior">Senior Level</button>
           </div>
         </div>
       </div>
