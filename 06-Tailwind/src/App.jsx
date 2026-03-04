@@ -1,9 +1,12 @@
-import React from 'react'
+import React from "react";
+import Cards from "./components/Cards";
 
 const App = () => {
   return (
-    <div>App</div>
-  )
-}
+    <div className="bg-red-400 w-full h-screen">
+      <Cards />
+    </div>
+  );
+};
 
-export default App
+export default App;
