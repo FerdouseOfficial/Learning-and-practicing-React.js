@@ -1,10 +1,12 @@
 import React from "react";
+import Section1 from "./components/Section1/Section1";
+import Section2 from "./components/Section2/Section2";
 
 const App = () => {
   return (
-    <div className="bg-amber-700 h-full w-full ">
-      <h1 className="p-4">My name is What?</h1>
-      <button class="bg-blue-500 text-white px-4 py-2">Click me</button>
+    <div>
+      <Section1/>
+      <Section2/>
     </div>
   );
 };
