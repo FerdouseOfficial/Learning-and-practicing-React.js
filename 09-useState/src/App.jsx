@@ -1,20 +1,28 @@
-import React from 'react'
+import React, { useState } from "react";
 
 const App = () => {
-  let a = 20;
-  function changeA() {
-    // console.log(a)
-    a++
-    console.log(a)
+  const [num, setNum] = useState(0);
+  function increaseNum() {
+    setNum(num + 1);
+  }
+  function decreaseNum() {
+    setNum(num - 1);
+  }
+  function jumtFive () {
+    setNum(num+5);
   }
   return (
-    <div>
-      <h1>Value of a is {a}</h1>
-      <button onClick={changeA}>Click</button>
+    <div className="container">
+      <div className="digits">
+        <h1>{num}</h1>
+      </div>
+      <div className="controlers">
+        <button onClick={increaseNum}>increase</button>
+        <button onClick={decreaseNum}>Decrease</button>
+      </div>
+      <button onClick={jumtFive}>Jump by 5</button>
     </div>
-  )
-}
+  );
+};
 
-export default App 
-
-// const (Read only , write only) = then useState(the value )
+export default App;
