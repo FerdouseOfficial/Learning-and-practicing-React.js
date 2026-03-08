@@ -8,8 +8,8 @@ const App = () => {
   function decreaseNum() {
     setNum(num - 1);
   }
-  function jumtFive () {
-    setNum(num+5);
+  function jumtFive() {
+    setNum(num + 5);
   }
   return (
     <div className="container">
