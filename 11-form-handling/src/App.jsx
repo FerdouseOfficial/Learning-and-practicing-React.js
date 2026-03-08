@@ -2,7 +2,7 @@ import React from 'react'
 
 const App = () => {
   const formSubmition= (e) => {
-    e.preventDefault()
+    e.prevent
     console.log("Form Submitted")
   }
   return (

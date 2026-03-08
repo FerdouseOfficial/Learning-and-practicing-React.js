@@ -2,8 +2,8 @@ import React,
 { useState } from 'react'
 
 const App = () => {
-  const [num, setNum] = useState({user: "Jihad", age: 20});
-  const btnClicked = () => {
+const [num, setNum] = useState({user: "Jihad", age: 20});
+const btnClicked = () => {
     const newNum = {...num};
     newNum.user = "Najmul";
     newNum.age = 22
