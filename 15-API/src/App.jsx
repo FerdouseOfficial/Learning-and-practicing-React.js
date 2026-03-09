@@ -1,35 +1,64 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+// import React, { useState } from "react";
+// import axios from "axios";
 
-function App() {
-  const [count, setCount] = useState(0)
+// const App = () => {
+//   // function getData() {
+//   //   const response = fetch("https://jsonplaceholder.typicode.com/todos/1")
+//   //   console.log(response);
+
+//   // }
+//   const [Data, setData] = useState()
+//   const getData = async () => {
+//     // This 1 way of doing it using the Asynchronous (Fetch) programming asynch/wait
+//     // const response =  await fetch('https://jsonplaceholder.typicode.com/todos/1')
+
+//     // const Data= await response.json()
+//     // console.log(Data)
+
+//     // This is the 2nd way:- by using axios okay
+//     const response = await axios.get("https://jsonplaceholder.typicode.com/todos/1");
+//     setData(response.data)
+//   };
+//   return (
+//     <div>
+//       <button onClick={getData}>Get Data</button>
+//       <div>
+//         {Data.map((elem, idx) => {
+//           return  <h3>Hello </h3>
+//         })}
+//       </div>
+//     </div>
+//   );
+// };
+
+// export default App;
+
+import React, { useState } from "react";
+import axios from "axios";
+
+const App = () => {
+  const [Data, setData] = useState([]);
+
+  const getData = async () => {
+    const response = await axios.get(
+      "https://jsonplaceholder.typicode.com/todos",
+    );
+    setData(response.data); // response.data is an array now
+  };
 
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
-}
+    <div>
+      <button onClick={getData}>Get Data</button>
 
-export default App
+      <div>
+        {Data.map((item, idx) => (
+          <h3 key={idx}>
+            Hello {idx}
+          </h3>
+        ))}
+      </div>
+    </div>
+  );
+};
+
+export default App;
