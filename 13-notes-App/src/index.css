@@ -1,1 +1,6 @@
 @import "tailwindcss";
+body {
+  font-family:
+    -apple-system, BlinkMacSystemFont, "San Francisco", "Helvetica Neue",
+    Helvetica, Arial, sans-serif;
+}

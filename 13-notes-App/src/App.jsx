@@ -10,7 +10,7 @@ const App = () => {
     e.preventDefault();
   };
   return (
-    <div className="flex  h-screen w-full bg-black">
+    <div className="flex h-screen  w-full bg-black">
       <form
         className="flex flex-col gap-4 m-10 "
         // stop form reloadation
@@ -48,6 +48,21 @@ const App = () => {
           Create Note
         </button>
       </form>
+      <div className="flex flex-col h-screen w-full">
+        <div className="p-5">
+          <h2 className="text-2xl text-white uppercase">Your Notes</h2>
+        </div>
+        <div className="flex flex-wrap gap-2 p-4 overflow-y-auto flex-1 scroll-auto">
+          <div className="h-52 w-40 bg-white rounded"></div>
+          <div className="h-52 w-40 bg-white rounded"></div>
+          <div className="h-52 w-40 bg-white rounded"></div>
+          <div className="h-52 w-40 bg-white rounded"></div>
+          <div className="h-52 w-40 bg-white rounded"></div>
+          <div className="h-52 w-40 bg-white rounded"></div>
+          <div className="h-52 w-40 bg-white rounded"></div>
+          <div className="h-52 w-40 bg-white rounded"></div>
+        </div>
+      </div>
     </div>
   );
 };
