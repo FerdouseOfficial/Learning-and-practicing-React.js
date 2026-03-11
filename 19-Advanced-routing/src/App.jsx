@@ -5,9 +5,9 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Product from "./pages/Product";
-import NotFound from "./pages/NotFound";
+import NotFound from "./Pages/NotFound";
 
-const app = () => {
+const App = () => {
   return (
     <div className="flex flex-col justify-between h-screen">
       <Navbar />
@@ -23,4 +23,4 @@ const app = () => {
   );
 };
 
-export default app;
+export default App;
