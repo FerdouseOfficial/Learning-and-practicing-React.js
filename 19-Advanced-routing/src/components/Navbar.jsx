@@ -24,6 +24,15 @@ const Navbar = () => {
           </li>
           <li>
             <a
+              href="/product"
+              className="text-lg font-semibold hover:text-blue-400 transition duration-300 relative group"
+            >
+              Product
+              <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-blue-400 transition-all duration-300 group-hover:w-full"></span>
+            </a>
+          </li>
+          <li>
+            <a
               href="/contact"
               className="text-lg font-semibold hover:text-blue-400 transition duration-300 relative group"
             >
