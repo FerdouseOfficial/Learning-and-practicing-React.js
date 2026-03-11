@@ -11,11 +11,13 @@ import Women from "./Pages/Women";
 import Kids from "./Pages/Kids";
 import Courses from "./Pages/Courses";
 import CourseDetails from "./Pages/CourseDetail";
+import Navbar2 from "./components/Navbar2";
 
 const App = () => {
   return (
     <div className="flex flex-col justify-between h-screen">
       <Navbar />
+      <Navbar2/>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
