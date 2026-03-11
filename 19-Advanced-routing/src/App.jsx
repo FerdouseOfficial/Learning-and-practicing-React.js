@@ -9,6 +9,8 @@ import NotFound from "./Pages/NotFound";
 import Male from "./Pages/Male";
 import Women from "./Pages/Women";
 import Kids from "./Pages/Kids";
+import Courses from "./Pages/Courses";
+import CourseDetails from "./Pages/CourseDetail";
 
 const App = () => {
   return (
@@ -17,6 +19,8 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
+        <Route path="/Courses" element={<Courses/>}/>
+        <Route path="/Courses/:id" element={<CourseDetails/>} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/Product" element={<Product />}>
           <Route path="Male" element={<Male />} />
