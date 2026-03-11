@@ -1,4 +1,4 @@
-import React from "react";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -16,29 +16,44 @@ const Footer = () => {
               <h3 className="text-lg font-bold mb-4">Quick Links</h3>
               <ul className="text-gray-400 space-y-2">
                 <li>
-                  <a href="#" className="hover:text-white transition">
+                  <Link
+                    to="/"
+                    className="cursor-pointer hover:text-white hover:translate-x-1 transition"
+                  >
                     Home
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-white transition">
+                  <Link
+                    to="/about"
+                    className="cursor-pointer hover:text-white hover:translate-x-1 transition"
+                  >
                     About
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-white transition">
+                  <Link
+                    to="/contact"
+                    className="cursor-pointer hover:text-white hover:translate-x-1 transition"
+                  >
                     Contact
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>
             <div>
               <h3 className="text-lg font-bold mb-4">Follow</h3>
               <div className="flex gap-4 text-gray-400">
-                <a href="#" className="hover:text-white transition">
+                <a
+                  href="#"
+                  className="cursor-pointer hover:text-white hover:scale-110 transition"
+                >
                   Twitter
                 </a>
-                <a href="#" className="hover:text-white transition">
+                <a
+                  href="#"
+                  className="cursor-pointer hover:text-white hover:scale-110 transition"
+                >
                   GitHub
                 </a>
               </div>
