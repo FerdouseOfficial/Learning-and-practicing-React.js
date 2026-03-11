@@ -1,11 +1,14 @@
 import { Route, Routes } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
-import Home from "./pages/Home";
+import Home from "./Pages/Home";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
-import Product from "./pages/Product";
+import Product from "./Pages/Product";
 import NotFound from "./Pages/NotFound";
+import Male from "./Pages/Male";
+import Women from "./Pages/Women";
+import Kids from "./Pages/Kids";
 
 const App = () => {
   return (
@@ -15,7 +18,11 @@ const App = () => {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
-        <Route path="/product" element={<Product />} />
+        <Route path="/Product" element={<Product />}>
+          <Route path="Male" element={<Male />} />
+          <Route path="Women" element={<Women />} />
+          <Route path="Kids" element={<Kids />} />
+        </Route>
         <Route path="*" element={<NotFound />} />
       </Routes>
       <Footer />

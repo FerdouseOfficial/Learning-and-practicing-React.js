@@ -1,31 +1,35 @@
 import React from "react";
-
+import Male from "./Male";
+import Women from "./Women";
+import Kids from "./Kids";
+import { Link, Outlet } from "react-router-dom";
 const Product = () => {
   return (
-    <div>
-      <div className="max-w-4xl mx-auto px-4 py-8">
-        <h1 className="text-4xl font-bold mb-6">Products</h1>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {[1, 2, 3, 4, 5, 6].map((product) => (
-            <div
-              key={product}
-              className="bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow p-4"
-            >
-              <div className="bg-gray-200 h-48 rounded-md mb-4"></div>
-              <h2 className="text-xl font-semibold mb-2">Product {product}</h2>
-              <p className="text-gray-600 mb-4">
-                High-quality product description
-              </p>
-              <div className="flex justify-between items-center">
-                <span className="text-2xl font-bold text-blue-600">$99.99</span>
-                <button className="bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700">
-                  Add to Cart
-                </button>
-              </div>
-            </div>
-          ))}
-        </div>
+    <div className="h-full mt-3">
+      <div className="flex justify-center items-center gap-4 ">
+        <Link
+          className="bg-gray-500 text-xl px-4 py-2 rounded-2xl tracking-wide font-[Apple] "
+          to="/Product/Male"
+        >
+          Mens
+        </Link>
+        <Link
+          className="bg-gray-500 text-xl px-4 py-2 rounded-2xl tracking-wide font-[Apple] "
+          to="/Product/Women"
+        >
+          Women
+        </Link>
+        <Link
+          className="bg-gray-500 text-xl px-4 py-2 rounded-2xl tracking-wide font-[Apple] "
+          to="/Product/Kids"
+        >
+          Kids
+        </Link>
       </div>
+      <h2 className="text-center text-3xl mt-5 absolute top-80 left-1/2 -translate-x-1/2 -translate-y-1/2 ">
+        Product Page
+      </h2>
+      <Outlet />
     </div>
   );
 };
